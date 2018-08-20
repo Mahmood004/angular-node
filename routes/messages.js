@@ -20,6 +20,7 @@ router.get('/', function(req, res, next) {
     });
 });
 
+// middlware for user authentication
 router.use('/', function(req, res, next) {
     jwt.verify(req.query.token, 'secret', function(err, decoded) {
         if (err) {

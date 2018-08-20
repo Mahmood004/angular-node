@@ -10,7 +10,7 @@ const userRoutes = require('./routes/user');
 
 // mongodb://root:root123@ds125372.mlab.com:25372/db_angular-node
 // mongodb://localhost:27017/angular-node
-mongoose.connect('mongodb://root:root123@ds125372.mlab.com:25372/db_angular-node', function(err) {
+mongoose.connect('mongodb://localhost:27017/angular-node', function(err) {
     if (err) console.log('MongoDB Connection Error');
     else console.log('MongoDB Connected Successfully');
 });
